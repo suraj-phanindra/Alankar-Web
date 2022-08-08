@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alankaar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style_h.css" />
+    <link rel="icon" type="image/x-icon" href="./Logo.png" />
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li class="png"></li>
+        <li class="logo">Alankaar</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="{% url 'admin:index' %}">Admin</a></li>
+        <li><a href="{% url 'volunteer' %}">Volunteer</a></li>
+      </ul>
+    </div>
+    <!-- <div class="banner" id="home">
+      <div class="banner-text">
+        <a href="./Onboarding volunteer page/index.html">Signup</a>
+      </div>
+    </div> -->
+
+    <div class="banner" id="home">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Signup</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="{% url 'student' %}">Student</a>
+          <a href="{% url 'volunteer_reg' %}">Volunteer</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Signup</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="./Student Registration form/index.html">Student</a>
+        <a href="./Onboarding volunteer page/index.html">Volunteer</a>
+      </div>
+    </div> -->
+
+    <div class="about" id="about">
+      <div class="section-header">
+        <h2>About US</h2>
+        <p>
+          The initiative was started in March 2018 with a team of 8 working
+          professionals and 8 students. The aim was simply to help and educate
+          the underprivileged. Primarily, our first teaching centre was in
+          Sector 14, Gurgoan. After many efforts we got a positive response from
+          the children’s parents. The parents after conferring with their
+          children and assessing their results quoted:
+        </p>
+        <p style="text-align: center; font-style: italic">
+          “If we had not joined Alankaar a few months back, passing in the final
+          exam itself would have been difficult.”
+        </p>
+        <p>
+          The above line was the only source of motivation while pushing
+          through the lack of time, volunteers and resources. Through that ray
+          of hope, volunteers slowly began to show up and with resonance to that
+          we were able to expand; we opened two new centeres in Gurgaon (Sector 15 &
+          45). Not only were the children passing their final exams but many were scoring above 90%. The whole perspective of our team took a paradigm shift
+          when the focus extended to the overall development of the children.
+          Thus, came various events, activities and festive celebrations.
+        </p>
+        <p>
+           Now, with all efforts struck in, we are successfully running the NGO
+          with 150+ students and 100 odd volunteers. Alankaar immensely
+          appreciates the society for the donation of time to help and educate
+          our tender budding minds. We not only got contributions from our
+          locals, but the support has been worldwide. These contributions from numerous people further helped us in necessary resources to the underprivileged children.
+        </p>
+        </p>
+      </div>
+      <div class="spread-info">
+        <img src="./banner_info.jpeg" alt="" width="77%" height="auto">
+      </div>
+      <!-- <div class="about-content">
+        <div class="single-about">
+          <img src="img/2.jpg" alt="" />
+          <div class="about-text">
+            <h2>More Text</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
+              ducimus aperiam, est ratione harum at. Earum rem facere quidem quo
+              distinctio omnis esse. Voluptatibus, doloribus.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="service" id="service">
+      <div class="section-header">
+        <h2>More Text</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta qui,
+          ipsa sed expedita dignissimos illum!
+        </p>
+      </div> -->
+      <br>
+      <div class="service-content">
+        <div class="single-service">
+          <iframe src="https://www.youtube.com/embed/A4xhMnrGfTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <img src="img/3.jpg" alt="" /> -->
+          <!-- <h2>More Text</h2> -->
+          <p>
+            Our kids Anshika & Rishika dancing gracefully.
+          </p>
+        </div>
+        <div class="single-service">
+          <iframe src="https://www.youtube.com/embed/zFzEUjHfffU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <img src="img/4.jpg" alt="" />
+          <h2>More Text</h2> -->
+          <p>
+            Rohit's amazing dance mesmerized the audience.
+          </p>
+        </div>
+        <div class="single-service">
+          <iframe src="https://www.youtube.com/embed/jMPaQ3yMkLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <img src="img/5.jpg" alt="" />
+          <h2>More Text</h2> -->
+          <p>
+            Kids at sector 45 Grugaon reciting a haryanvi poem
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="section-header">
+        <h2>Contact us</h2>
+        <ul>
+        </br>
+        <li class="no-label">
+          <a href="https://in.pinterest.com/alankaarcommunity/" target="_blank" title="Visit Alankaar on Pinterest">
+            <span class="fa fa-2x fa-pinterest"></span>
+          </a>
+        </li>
+        <li><div class="vl"></div></li>
+        <li class="no-label">
+          <a href="https://in.pinterest.com/alankaarcommunity/" target="_blank" title="Visit Alankaar on Pinterest">
+            <span class="fa fa-2x fa-medium"></span>
+          </a>
+        </li>
+        <li><div class="vl"></div></li>
+        <li class="no-label">
+          <a href="https://in.pinterest.com/alankaarcommunity/" target="_blank" title="Visit Alankaar on Pinterest">
+            <span class="fa fa-2x fa-instagram"></span>
+          </a>
+        </li>
+        <li><div class="vl"></div></li>
+        <li class="no-label">
+          <a href="https://in.pinterest.com/alankaarcommunity/" target="_blank" title="Visit Alankaar on Pinterest">
+            <span class="fa fa-2x fa-facebook"></span>
+          </a>
+        </li>
+        <li><div class="vl"></div></li>
+        <li class="no-label">
+          <a href="https://in.pinterest.com/alankaarcommunity/" target="_blank" title="Visit Alankaar on Pinterest">
+            <span class="fa fa-2x fa-whatsapp"></span>
+          </a>
+        </li>
+        <li><div class="vl"></div></li>
+        <li class="no-label">
+          <a href="https://in.pinterest.com/alankaarcommunity/" target="_blank" title="Visit Alankaar on Pinterest">
+            <span class="fa fa-2x fa-tumblr"></span>
+          </a>
+        </li>
+        <li><div class="vl"></div></li>
+        <li class="no-label">
+          <a href="https://in.pinterest.com/alankaarcommunity/" target="_blank" title="Visit Alankaar on Pinterest">
+            <span class="fa fa-2x fa-twitter"></span>
+          </a>
+        </li>
+        <li><div class="vl"></div></li>
+        <li class="no-label">
+          <a href="https://in.pinterest.com/alankaarcommunity/" target="_blank" title="Visit Alankaar on Pinterest">
+            <span class="fa fa-2x fa-linkedin"></span>
+          </a>
+        </li>
+        </ul>
+      </div>
+      <!-- <div class="single-contact">
+        <p>contact form</p>
+      </div> -->
+    </div>
+    <footer>
+      <p>Alankaar India Trust</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+          $(".header").addClass("active");
+        } else {
+          $(".header").removeClass("active");
+        }
+      });
+    </script>
+    <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="../Logo.png">
+    <title>Onboarding Volunteer page</title>
+  </head>
+  <body>
+    <div class="element">
+      <div class="lefthalf">
+        <img id="logo1" src="../AlankaarLogo.png" alt="AlankarLogo" />
+        <div class="footer1">
+          <h4>Not a Volunteer? <a class="sign-up" href="{% url 'student' %}">Student Registration</a></h4>
+        </div>
+
+        <div class="contact">
+          <h4>ALANKAAR INDIA TRUST</h4>
+          Contact Number: 7990567490, 7503429428
+          Email: alankaar.community@gmail.com
+          Website: www.alankaar.org.in
+        </div>
+      </div>
+
+      <!-- 2nd half -->
+      <div class="righthalf">
+        <h1 class="margin">Volunteer Onboarding Form</h1>
+        <p1 class="para1">
+          You are our biggest strength so we want to know basic details about
+          you, what drives you to be a part of Alankaar community and
+          suggestions on how can we make it better so our kids benefit the most.
+        </p1>
+
+        <div class="login-form margin">
+          <input type="text" placeholder="First Name" />
+          <br />
+          <input type="text" placeholder="Last Name" />
+          <br />
+          <input type="Number" placeholder="Mobile Number" />
+          <br />
+          <input type="email" placeholder="Email Address" />
+
+          <br />
+          <div class="gen margin">
+            <label for="sex">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">other</label>
+          </div>
+          <label for="mydate">Date of Joining:</label>
+          <input type="date" placeholder="dd/mm/yyyy" id="mydate" name="date" />
+
+          <div class="place margin">
+            <h3>Which is your preferred center?</h3>
+            <br />
+            <input type="radio" id="Sector 45" name="sec" value="Sector 45" />
+            <label for="Sector 45">Sector 45</label>
+            <input type="radio" id="Sector 14" name="sec" value="Sector 14" />
+            <label for="Sector 14">Sector 14</label>
+            <input type="radio" id="Sector 15 Part 2" name="sec" value="Sector 15 Part 2" />
+            <label for="Sector 15 Part 2">Sector 15 Part 2</label>
+          </div>
+
+          <div class="upload valign-text-middle">
+            <h3>
+              Please upload any of your Identity Card (Aadhar, Driving License,
+              Passport, etc.)
+            </h3>
+          </div>
+          <br>
+          <input type="file" id="myFile">
+          <button onclick="myFunction()">Upload</button>
+
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myFile");
+            x.disabled = true;
+          }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

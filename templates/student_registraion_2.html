@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="../Logo.png">
+    <title>Onboarding Student page</title>
+  </head>
+  <body>
+    <div class="element">
+      <div class="lefthalf">
+        <img id="logo1" src="../AlankaarLogo.png" alt="AlankarLogo" />
+        <div class="footer1">
+          <h4>Not a Student? <a class="sign-up" href="../Onboarding volunteer page/index.html">Volunteer Registration</a></h4>
+        </div>
+
+        <div class="contact">
+          <h4>ALANKAAR INDIA TRUST</h4>
+          Contact Number: 7990567490, 7503429428 Email:
+          alankaar.community@gmail.com Website: www.alankaar.org.in
+        </div>
+      </div>
+
+      <!-- 2nd half -->
+      <div class="righthalf">
+
+        <h1 class="margin">Student Registration Form</h1>
+        <h3>Please fill the details below</h3>
+        <div class="login-form margin">
+          <input type="text" placeholder="Class" />
+          <input type="text" placeholder="Current School Name" />
+          <br />
+          <div class="School">
+            <label for="school">School Category</label>
+            <input type="radio" id="Government" name="School" value="Government" />
+            <label for="Government">Government</label>
+            <input type="radio" id="Private" name="School" value="Private" />
+            <label for="Private">Private</label>
+
+        </div>
+        <div class="login-form margin2">
+             <div class="Medium">
+                <label for="Med">Medium of Instruction in school</label>
+                <input type="radio" id="English" name="Medd" value="English" />
+                <label for="English">English</label>
+                <input type="radio" id="Hindi" name="Medd" value="Hindi" />
+                <label for="Hindi">Hindi</label>
+                <input type="radio" id="Other" name="Medd" value="Other" />
+                <label for="Other">Other</label>
+
+            </div>
+         </div>
+
+          <div class="login-form ">
+            <input type="Address" placeholder="Address" />
+          </div>
+
+          <div class="upload valign-text-middle margin">
+            <h3>
+              Please upload Signature with date. (Accepted Formats - jpg, jpeg, png)
+            </h3>
+          </div>
+
+          <br>
+          <input type="file" id="myFile">
+          <button onclick="myFunction()">Upload</button>
+
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myFile");
+            x.disabled = true;
+          }
+          </script>
+        </div>
+
+          <div class="overlap ">
+            <div class="image1 poppins valign-text-middle">Submit</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
